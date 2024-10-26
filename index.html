@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor FTP - Projeto Acadêmico</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #4ecca3;
+        }
+
+        .semester {
+            font-size: 1.5rem;
+            color: #7ee6ff;
+            margin-bottom: 2rem;
+        }
+
+        .team-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+            margin-top: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: #4ecca3;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .member-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #7ee6ff;
+        }
+
+        .member-role {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .info-section {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .info-text {
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #4ecca3;
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #7ee6ff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Servidor FTP</h1>
+            <div class="semester">6º Semestre - Ciência da Computação</div>
+        </header>
+
+        <div class="team-section">
+            <h2>Nossa Equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="member-name">Nome do Aluno 1</h3>
+                    <p class="member-role">Desenvolvedor</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="member-name">Nome do Aluno 2</h3>
+                    <p class="member-role">Desenvolvedor</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="member-name">Nome do Aluno 3</h3>
+                    <p class="member-role">Desenvolvedor</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="member-name">Nome do Aluno 4</h3>
+                    <p class="member-role">Desenvolvedor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <p class="info-text">
+                Bem-vindo ao nosso servidor FTP! Este projeto foi desenvolvido como parte 
+                do trabalho acadêmico do 6º semestre de Ciência da Computação.
+            </p>
+<a href="http://54.207.119.56/ftp/" class="button" target="_blank" rel="noopener noreferrer">Acessar FTP</a>
+
+        </div>
+    </div>
+</body>
+</html>
